@@ -1,0 +1,61 @@
+body {
+  background-color: black;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.container > div > p {
+  line-height: 2;
+}
+
+.skills .progress-holder {
+  margin-bottom: 40px;
+}
+
+.skills .progress-holder h4 {
+  margin-bottom: 15px;
+}
+
+.container .experiences button {
+  background-color: #4560b8;
+  text-align: center;
+  padding: 8px;
+  width: 100px;
+  color: white;
+}
+
+.skills .progress-holder .progress {
+  background-color: #dedadc;
+  height: 20px;
+}
+
+.skills .progress-holder .progress span {
+  display: block;
+  height: 100%;
+  position: relative;
+}
+
+.skills .progress-holder .progress span::before {
+  content: attr(data-progress);
+  position: absolute;
+  color: white;
+  top: -40px;
+  right: -18px;
+  padding: 4px 0;
+  width: 40px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.skills .progress-holder .progress span::after {
+  content: "";
+  position: absolute;
+  border-width: 8px;
+  right: -8px;
+  top: -15px;
+}
